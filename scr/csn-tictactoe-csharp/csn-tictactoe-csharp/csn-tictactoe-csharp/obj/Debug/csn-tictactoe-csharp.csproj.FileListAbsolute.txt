@@ -1,0 +1,10 @@
+D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\bin\Debug\csn-tictactoe-csharp.exe.config
+D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\bin\Debug\csn-tictactoe-csharp.exe
+D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\bin\Debug\csn-tictactoe-csharp.pdb
+D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn-tictactoe-csharp.csproj.AssemblyReference.cache
+D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn_tictactoe_csharp.Properties.Resources.resources
+D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn-tictactoe-csharp.csproj.GenerateResource.cache
+D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn-tictactoe-csharp.csproj.CoreCompileInputs.cache
+D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn-tictactoe-csharp.exe
+D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn-tictactoe-csharp.pdb
+D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn_tictactoe_csharp.frmmenuchinh.resources
