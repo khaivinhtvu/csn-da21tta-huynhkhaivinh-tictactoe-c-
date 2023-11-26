@@ -58,7 +58,10 @@ namespace csn_tictactoe_csharp
                     switch (chedochoi)
                     {
                         case "3x3":
-                            frm3x3 to3 = new frm3x3();
+                            frm3x3 to3 = new frm3x3
+                            {
+                                Kytunguoichoi3 = "x"
+                            };
                             to3.Show();
                             break;
                         case "5x5":
@@ -76,7 +79,10 @@ namespace csn_tictactoe_csharp
                     switch (chedochoi)
                     {
                         case "3x3":
-                            frm3x3 to3 = new frm3x3();
+                            frm3x3 to3 = new frm3x3
+                            {
+                                Kytunguoichoi3 = "o"
+                            };
                             to3.Show();
                             break;
                         case "5x5":

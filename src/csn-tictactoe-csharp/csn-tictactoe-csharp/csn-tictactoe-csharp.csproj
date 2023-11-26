@@ -72,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm3x3.resx">
+      <DependentUpon>frm3x3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmmenuchinh.resx">
       <DependentUpon>frmmenuchinh.cs</DependentUpon>
     </EmbeddedResource>

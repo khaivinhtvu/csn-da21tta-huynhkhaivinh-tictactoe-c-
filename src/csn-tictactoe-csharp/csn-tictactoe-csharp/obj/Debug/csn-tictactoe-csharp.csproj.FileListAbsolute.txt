@@ -8,3 +8,4 @@ D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn-tictact
 D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn-tictactoe-csharp.exe
 D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn-tictactoe-csharp.pdb
 D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn_tictactoe_csharp.frmmenuchinh.resources
+D:\Khai Vinh\scr\csn-tictactoe-csharp\csn-tictactoe-csharp\obj\Debug\csn_tictactoe_csharp.frm3x3.resources

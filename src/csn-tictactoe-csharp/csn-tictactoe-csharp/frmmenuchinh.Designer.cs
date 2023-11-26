@@ -72,7 +72,7 @@ namespace csn_tictactoe_csharp
             // btno
             // 
             this.btno.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btno.ForeColor = System.Drawing.Color.Red;
             this.btno.Location = new System.Drawing.Point(446, 93);
             this.btno.Name = "btno";
             this.btno.Size = new System.Drawing.Size(75, 75);
@@ -138,7 +138,7 @@ namespace csn_tictactoe_csharp
             this.Controls.Add(this.lbchonchedochoi);
             this.Name = "frmmenuchinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Trò chơi tc-tac-toe";
+            this.Text = "Trò chơi tic-tac-toe";
             this.ResumeLayout(false);
             this.PerformLayout();
 

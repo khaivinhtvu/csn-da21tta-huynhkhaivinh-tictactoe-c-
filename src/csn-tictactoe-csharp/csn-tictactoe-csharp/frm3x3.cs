@@ -16,5 +16,32 @@ namespace csn_tictactoe_csharp
         {
             InitializeComponent();
         }
+
+        private string kytunguoichoi;
+
+        public string Kytunguoichoi3
+        {
+            get { return kytunguoichoi; }
+            set { kytunguoichoi = value; }
+        }
+
+        private void frm3x3_Activated(object sender, EventArgs e)
+        {
+            switch (kytunguoichoi)
+            {
+                case "x":
+                    {
+                        lbkytunguoichoi.Text = "X";
+                        lbkytunguoichoi.ForeColor = Color.Blue;
+                        break;
+                    }
+                case "o":
+                    {
+                        lbkytunguoichoi.Text = "O";
+                        lbkytunguoichoi.ForeColor = Color.Red;
+                        break;
+                    }
+            }
+        }
     }
 }
