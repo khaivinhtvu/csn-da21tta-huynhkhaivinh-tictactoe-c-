@@ -51,7 +51,7 @@ namespace csn_tictactoe_csharp
             // lbchonkytu
             // 
             this.lbchonkytu.AutoSize = true;
-            this.lbchonkytu.Location = new System.Drawing.Point(352, 34);
+            this.lbchonkytu.Location = new System.Drawing.Point(352, 49);
             this.lbchonkytu.Name = "lbchonkytu";
             this.lbchonkytu.Size = new System.Drawing.Size(90, 20);
             this.lbchonkytu.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace csn_tictactoe_csharp
             // 
             // btnx
             // 
-            this.btnx.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnx.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnx.ForeColor = System.Drawing.Color.Blue;
             this.btnx.Location = new System.Drawing.Point(285, 93);
             this.btnx.Name = "btnx";
@@ -71,7 +71,7 @@ namespace csn_tictactoe_csharp
             // 
             // btno
             // 
-            this.btno.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btno.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btno.ForeColor = System.Drawing.Color.Red;
             this.btno.Location = new System.Drawing.Point(446, 93);
             this.btno.Name = "btno";

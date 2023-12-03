@@ -64,6 +64,12 @@
     <Compile Include="frm7x7.Designer.cs">
       <DependentUpon>frm7x7.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmloi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmloi.Designer.cs">
+      <DependentUpon>frmloi.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmmenuchinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm3x3.resx">
       <DependentUpon>frm3x3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm5x5.resx">
+      <DependentUpon>frm5x5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm7x7.resx">
+      <DependentUpon>frm7x7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmloi.resx">
+      <DependentUpon>frmloi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmmenuchinh.resx">
       <DependentUpon>frmmenuchinh.cs</DependentUpon>
