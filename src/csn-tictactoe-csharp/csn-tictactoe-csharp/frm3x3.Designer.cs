@@ -179,6 +179,7 @@ namespace csn_tictactoe_csharp
             this.Controls.Add(this.lbkytunguoichoi);
             this.Controls.Add(this.lbnguoichoi);
             this.Name = "frm3x3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trò chơi tic-tac-toe";
             this.Activated += new System.EventHandler(this.frm3x3_Activated);
             this.ResumeLayout(false);

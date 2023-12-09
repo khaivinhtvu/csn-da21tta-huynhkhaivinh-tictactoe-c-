@@ -387,6 +387,7 @@ namespace csn_tictactoe_csharp
             this.Controls.Add(this.lbkytunguoichoi);
             this.Controls.Add(this.lbnguoichoi);
             this.Name = "frm5x5";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm5x5";
             this.Activated += new System.EventHandler(this.frm5x5_Activated);
             this.ResumeLayout(false);

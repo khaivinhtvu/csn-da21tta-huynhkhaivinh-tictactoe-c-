@@ -113,25 +113,34 @@ namespace csn_tictactoe_csharp
                 switch (loi)
                 {
                     case 1:
-                        frmloi dlg1 = new frmloi
-                        {
-                            Maloi = 1
-                        };
-                        dlg1.ShowDialog();
+                        MessageBox.Show("Chọn ký tự của bạn");
+                        kytu = null;
+                        chedochoi = null;
+                        btnx.BackColor = SystemColors.Control;
+                        btno.BackColor = SystemColors.Control;
+                        btn3x3.BackColor = SystemColors.Control;
+                        btn5x5.BackColor = SystemColors.Control;
+                        btn7x7.BackColor = SystemColors.Control;
                         break;
                     case 2:
-                        frmloi dlg2 = new frmloi
-                        {
-                            Maloi = 2
-                        };
-                        dlg2.ShowDialog();
+                        MessageBox.Show("Chọn chế độ chơi");
+                        kytu = null;
+                        chedochoi = null;
+                        btnx.BackColor = SystemColors.Control;
+                        btno.BackColor = SystemColors.Control;
+                        btn3x3.BackColor = SystemColors.Control;
+                        btn5x5.BackColor = SystemColors.Control;
+                        btn7x7.BackColor = SystemColors.Control;
                         break;
                     case 3:
-                        frmloi dlg3 = new frmloi
-                        {
-                            Maloi = 3
-                        };
-                        dlg3.ShowDialog();
+                        MessageBox.Show("Chọn ký tự của bạn và chọn chế độ chơi");
+                        kytu = null;
+                        chedochoi = null;
+                        btnx.BackColor = SystemColors.Control;
+                        btno.BackColor = SystemColors.Control;
+                        btn3x3.BackColor = SystemColors.Control;
+                        btn5x5.BackColor = SystemColors.Control;
+                        btn7x7.BackColor = SystemColors.Control;
                         break;
                 }
             }

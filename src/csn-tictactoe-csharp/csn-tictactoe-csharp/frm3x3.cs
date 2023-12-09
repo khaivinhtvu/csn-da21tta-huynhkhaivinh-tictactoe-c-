@@ -18,6 +18,7 @@ namespace csn_tictactoe_csharp
         }
 
         private string kytunguoichoi;
+        private int[,] kt = new int[3,3];
 
         public string Kytunguoichoi3
         {
@@ -44,6 +45,11 @@ namespace csn_tictactoe_csharp
             }
         }
 
+        private void Thang()
+        {
+            
+        }
+
         private void btn1_Click(object sender, EventArgs e)
         {
             switch (kytunguoichoi)
@@ -61,6 +67,8 @@ namespace csn_tictactoe_csharp
                         break;
                     }
             }
+
+            Thang();
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -80,6 +88,8 @@ namespace csn_tictactoe_csharp
                         break;
                     }
             }
+
+            Thang();
         }
 
         private void btn3_Click(object sender, EventArgs e)
@@ -99,6 +109,8 @@ namespace csn_tictactoe_csharp
                         break;
                     }
             }
+
+            Thang();
         }
 
         private void btn4_Click(object sender, EventArgs e)

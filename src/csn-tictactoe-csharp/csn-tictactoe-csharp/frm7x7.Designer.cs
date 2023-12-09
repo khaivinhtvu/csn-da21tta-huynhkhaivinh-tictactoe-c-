@@ -64,7 +64,7 @@ namespace csn_tictactoe_csharp
             this.btn30 = new System.Windows.Forms.Button();
             this.btn20 = new System.Windows.Forms.Button();
             this.btn34 = new System.Windows.Forms.Button();
-            this.vtn17 = new System.Windows.Forms.Button();
+            this.btn17 = new System.Windows.Forms.Button();
             this.btn18 = new System.Windows.Forms.Button();
             this.btn19 = new System.Windows.Forms.Button();
             this.btn31 = new System.Windows.Forms.Button();
@@ -123,6 +123,7 @@ namespace csn_tictactoe_csharp
             this.btn2.Size = new System.Drawing.Size(90, 90);
             this.btn2.TabIndex = 4;
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -133,6 +134,7 @@ namespace csn_tictactoe_csharp
             this.btn3.Size = new System.Drawing.Size(90, 90);
             this.btn3.TabIndex = 5;
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn4
             // 
@@ -143,6 +145,7 @@ namespace csn_tictactoe_csharp
             this.btn4.Size = new System.Drawing.Size(90, 90);
             this.btn4.TabIndex = 6;
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -153,6 +156,7 @@ namespace csn_tictactoe_csharp
             this.btn5.Size = new System.Drawing.Size(90, 90);
             this.btn5.TabIndex = 7;
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
@@ -163,6 +167,7 @@ namespace csn_tictactoe_csharp
             this.btn6.Size = new System.Drawing.Size(90, 90);
             this.btn6.TabIndex = 8;
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn7
             // 
@@ -173,6 +178,7 @@ namespace csn_tictactoe_csharp
             this.btn7.Size = new System.Drawing.Size(90, 90);
             this.btn7.TabIndex = 9;
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn8
             // 
@@ -183,6 +189,7 @@ namespace csn_tictactoe_csharp
             this.btn8.Size = new System.Drawing.Size(90, 90);
             this.btn8.TabIndex = 10;
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn15
             // 
@@ -193,6 +200,7 @@ namespace csn_tictactoe_csharp
             this.btn15.Size = new System.Drawing.Size(90, 90);
             this.btn15.TabIndex = 11;
             this.btn15.UseVisualStyleBackColor = true;
+            this.btn15.Click += new System.EventHandler(this.btn15_Click);
             // 
             // btn22
             // 
@@ -203,6 +211,7 @@ namespace csn_tictactoe_csharp
             this.btn22.Size = new System.Drawing.Size(90, 90);
             this.btn22.TabIndex = 12;
             this.btn22.UseVisualStyleBackColor = true;
+            this.btn22.Click += new System.EventHandler(this.btn22_Click);
             // 
             // btn29
             // 
@@ -213,6 +222,7 @@ namespace csn_tictactoe_csharp
             this.btn29.Size = new System.Drawing.Size(90, 90);
             this.btn29.TabIndex = 13;
             this.btn29.UseVisualStyleBackColor = true;
+            this.btn29.Click += new System.EventHandler(this.btn29_Click);
             // 
             // btn36
             // 
@@ -223,6 +233,7 @@ namespace csn_tictactoe_csharp
             this.btn36.Size = new System.Drawing.Size(90, 90);
             this.btn36.TabIndex = 14;
             this.btn36.UseVisualStyleBackColor = true;
+            this.btn36.Click += new System.EventHandler(this.btn36_Click);
             // 
             // btn43
             // 
@@ -233,6 +244,7 @@ namespace csn_tictactoe_csharp
             this.btn43.Size = new System.Drawing.Size(90, 90);
             this.btn43.TabIndex = 15;
             this.btn43.UseVisualStyleBackColor = true;
+            this.btn43.Click += new System.EventHandler(this.btn43_Click);
             // 
             // btn14
             // 
@@ -243,6 +255,7 @@ namespace csn_tictactoe_csharp
             this.btn14.Size = new System.Drawing.Size(90, 90);
             this.btn14.TabIndex = 16;
             this.btn14.UseVisualStyleBackColor = true;
+            this.btn14.Click += new System.EventHandler(this.btn14_Click);
             // 
             // btn21
             // 
@@ -253,6 +266,7 @@ namespace csn_tictactoe_csharp
             this.btn21.Size = new System.Drawing.Size(90, 90);
             this.btn21.TabIndex = 17;
             this.btn21.UseVisualStyleBackColor = true;
+            this.btn21.Click += new System.EventHandler(this.btn21_Click);
             // 
             // btn28
             // 
@@ -263,6 +277,7 @@ namespace csn_tictactoe_csharp
             this.btn28.Size = new System.Drawing.Size(90, 90);
             this.btn28.TabIndex = 18;
             this.btn28.UseVisualStyleBackColor = true;
+            this.btn28.Click += new System.EventHandler(this.btn28_Click);
             // 
             // btn35
             // 
@@ -273,6 +288,7 @@ namespace csn_tictactoe_csharp
             this.btn35.Size = new System.Drawing.Size(90, 90);
             this.btn35.TabIndex = 19;
             this.btn35.UseVisualStyleBackColor = true;
+            this.btn35.Click += new System.EventHandler(this.btn35_Click);
             // 
             // btn42
             // 
@@ -283,6 +299,7 @@ namespace csn_tictactoe_csharp
             this.btn42.Size = new System.Drawing.Size(90, 90);
             this.btn42.TabIndex = 20;
             this.btn42.UseVisualStyleBackColor = true;
+            this.btn42.Click += new System.EventHandler(this.btn42_Click);
             // 
             // btn49
             // 
@@ -293,6 +310,7 @@ namespace csn_tictactoe_csharp
             this.btn49.Size = new System.Drawing.Size(90, 90);
             this.btn49.TabIndex = 21;
             this.btn49.UseVisualStyleBackColor = true;
+            this.btn49.Click += new System.EventHandler(this.btn49_Click);
             // 
             // btn44
             // 
@@ -303,6 +321,7 @@ namespace csn_tictactoe_csharp
             this.btn44.Size = new System.Drawing.Size(90, 90);
             this.btn44.TabIndex = 22;
             this.btn44.UseVisualStyleBackColor = true;
+            this.btn44.Click += new System.EventHandler(this.btn44_Click);
             // 
             // btn45
             // 
@@ -313,6 +332,7 @@ namespace csn_tictactoe_csharp
             this.btn45.Size = new System.Drawing.Size(90, 90);
             this.btn45.TabIndex = 23;
             this.btn45.UseVisualStyleBackColor = true;
+            this.btn45.Click += new System.EventHandler(this.btn45_Click);
             // 
             // btn46
             // 
@@ -323,6 +343,7 @@ namespace csn_tictactoe_csharp
             this.btn46.Size = new System.Drawing.Size(90, 90);
             this.btn46.TabIndex = 24;
             this.btn46.UseVisualStyleBackColor = true;
+            this.btn46.Click += new System.EventHandler(this.btn46_Click);
             // 
             // btn47
             // 
@@ -333,6 +354,7 @@ namespace csn_tictactoe_csharp
             this.btn47.Size = new System.Drawing.Size(90, 90);
             this.btn47.TabIndex = 25;
             this.btn47.UseVisualStyleBackColor = true;
+            this.btn47.Click += new System.EventHandler(this.btn47_Click);
             // 
             // btn48
             // 
@@ -343,6 +365,7 @@ namespace csn_tictactoe_csharp
             this.btn48.Size = new System.Drawing.Size(90, 90);
             this.btn48.TabIndex = 26;
             this.btn48.UseVisualStyleBackColor = true;
+            this.btn48.Click += new System.EventHandler(this.btn48_Click);
             // 
             // btn23
             // 
@@ -353,6 +376,7 @@ namespace csn_tictactoe_csharp
             this.btn23.Size = new System.Drawing.Size(90, 90);
             this.btn23.TabIndex = 27;
             this.btn23.UseVisualStyleBackColor = true;
+            this.btn23.Click += new System.EventHandler(this.btn23_Click);
             // 
             // btn24
             // 
@@ -363,6 +387,7 @@ namespace csn_tictactoe_csharp
             this.btn24.Size = new System.Drawing.Size(90, 90);
             this.btn24.TabIndex = 28;
             this.btn24.UseVisualStyleBackColor = true;
+            this.btn24.Click += new System.EventHandler(this.btn24_Click);
             // 
             // btn25
             // 
@@ -373,6 +398,7 @@ namespace csn_tictactoe_csharp
             this.btn25.Size = new System.Drawing.Size(90, 90);
             this.btn25.TabIndex = 29;
             this.btn25.UseVisualStyleBackColor = true;
+            this.btn25.Click += new System.EventHandler(this.btn25_Click);
             // 
             // btn26
             // 
@@ -383,6 +409,7 @@ namespace csn_tictactoe_csharp
             this.btn26.Size = new System.Drawing.Size(90, 90);
             this.btn26.TabIndex = 30;
             this.btn26.UseVisualStyleBackColor = true;
+            this.btn26.Click += new System.EventHandler(this.btn26_Click);
             // 
             // btn27
             // 
@@ -393,6 +420,7 @@ namespace csn_tictactoe_csharp
             this.btn27.Size = new System.Drawing.Size(90, 90);
             this.btn27.TabIndex = 31;
             this.btn27.UseVisualStyleBackColor = true;
+            this.btn27.Click += new System.EventHandler(this.btn27_Click);
             // 
             // btn16
             // 
@@ -403,6 +431,7 @@ namespace csn_tictactoe_csharp
             this.btn16.Size = new System.Drawing.Size(90, 90);
             this.btn16.TabIndex = 32;
             this.btn16.UseVisualStyleBackColor = true;
+            this.btn16.Click += new System.EventHandler(this.btn16_Click);
             // 
             // btn30
             // 
@@ -413,6 +442,7 @@ namespace csn_tictactoe_csharp
             this.btn30.Size = new System.Drawing.Size(90, 90);
             this.btn30.TabIndex = 33;
             this.btn30.UseVisualStyleBackColor = true;
+            this.btn30.Click += new System.EventHandler(this.btn30_Click);
             // 
             // btn20
             // 
@@ -423,6 +453,7 @@ namespace csn_tictactoe_csharp
             this.btn20.Size = new System.Drawing.Size(90, 90);
             this.btn20.TabIndex = 34;
             this.btn20.UseVisualStyleBackColor = true;
+            this.btn20.Click += new System.EventHandler(this.btn20_Click);
             // 
             // btn34
             // 
@@ -433,16 +464,18 @@ namespace csn_tictactoe_csharp
             this.btn34.Size = new System.Drawing.Size(90, 90);
             this.btn34.TabIndex = 35;
             this.btn34.UseVisualStyleBackColor = true;
+            this.btn34.Click += new System.EventHandler(this.btn34_Click);
             // 
-            // vtn17
+            // btn17
             // 
-            this.vtn17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vtn17.Location = new System.Drawing.Point(271, 281);
-            this.vtn17.Margin = new System.Windows.Forms.Padding(9);
-            this.vtn17.Name = "vtn17";
-            this.vtn17.Size = new System.Drawing.Size(90, 90);
-            this.vtn17.TabIndex = 36;
-            this.vtn17.UseVisualStyleBackColor = true;
+            this.btn17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn17.Location = new System.Drawing.Point(271, 281);
+            this.btn17.Margin = new System.Windows.Forms.Padding(9);
+            this.btn17.Name = "btn17";
+            this.btn17.Size = new System.Drawing.Size(90, 90);
+            this.btn17.TabIndex = 36;
+            this.btn17.UseVisualStyleBackColor = true;
+            this.btn17.Click += new System.EventHandler(this.btn17_Click);
             // 
             // btn18
             // 
@@ -453,6 +486,7 @@ namespace csn_tictactoe_csharp
             this.btn18.Size = new System.Drawing.Size(90, 90);
             this.btn18.TabIndex = 37;
             this.btn18.UseVisualStyleBackColor = true;
+            this.btn18.Click += new System.EventHandler(this.btn18_Click);
             // 
             // btn19
             // 
@@ -463,6 +497,7 @@ namespace csn_tictactoe_csharp
             this.btn19.Size = new System.Drawing.Size(90, 90);
             this.btn19.TabIndex = 38;
             this.btn19.UseVisualStyleBackColor = true;
+            this.btn19.Click += new System.EventHandler(this.btn19_Click);
             // 
             // btn31
             // 
@@ -473,6 +508,7 @@ namespace csn_tictactoe_csharp
             this.btn31.Size = new System.Drawing.Size(90, 90);
             this.btn31.TabIndex = 39;
             this.btn31.UseVisualStyleBackColor = true;
+            this.btn31.Click += new System.EventHandler(this.btn31_Click);
             // 
             // btn32
             // 
@@ -483,6 +519,7 @@ namespace csn_tictactoe_csharp
             this.btn32.Size = new System.Drawing.Size(90, 90);
             this.btn32.TabIndex = 40;
             this.btn32.UseVisualStyleBackColor = true;
+            this.btn32.Click += new System.EventHandler(this.btn32_Click);
             // 
             // btn33
             // 
@@ -493,6 +530,7 @@ namespace csn_tictactoe_csharp
             this.btn33.Size = new System.Drawing.Size(90, 90);
             this.btn33.TabIndex = 41;
             this.btn33.UseVisualStyleBackColor = true;
+            this.btn33.Click += new System.EventHandler(this.btn33_Click);
             // 
             // btn9
             // 
@@ -503,6 +541,7 @@ namespace csn_tictactoe_csharp
             this.btn9.Size = new System.Drawing.Size(90, 90);
             this.btn9.TabIndex = 42;
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn37
             // 
@@ -513,6 +552,7 @@ namespace csn_tictactoe_csharp
             this.btn37.Size = new System.Drawing.Size(90, 90);
             this.btn37.TabIndex = 43;
             this.btn37.UseVisualStyleBackColor = true;
+            this.btn37.Click += new System.EventHandler(this.btn37_Click);
             // 
             // btn13
             // 
@@ -523,6 +563,7 @@ namespace csn_tictactoe_csharp
             this.btn13.Size = new System.Drawing.Size(90, 90);
             this.btn13.TabIndex = 44;
             this.btn13.UseVisualStyleBackColor = true;
+            this.btn13.Click += new System.EventHandler(this.btn13_Click);
             // 
             // btn41
             // 
@@ -533,6 +574,7 @@ namespace csn_tictactoe_csharp
             this.btn41.Size = new System.Drawing.Size(90, 90);
             this.btn41.TabIndex = 45;
             this.btn41.UseVisualStyleBackColor = true;
+            this.btn41.Click += new System.EventHandler(this.btn41_Click);
             // 
             // btn10
             // 
@@ -543,6 +585,7 @@ namespace csn_tictactoe_csharp
             this.btn10.Size = new System.Drawing.Size(90, 90);
             this.btn10.TabIndex = 46;
             this.btn10.UseVisualStyleBackColor = true;
+            this.btn10.Click += new System.EventHandler(this.btn10_Click);
             // 
             // btn11
             // 
@@ -553,6 +596,7 @@ namespace csn_tictactoe_csharp
             this.btn11.Size = new System.Drawing.Size(90, 90);
             this.btn11.TabIndex = 47;
             this.btn11.UseVisualStyleBackColor = true;
+            this.btn11.Click += new System.EventHandler(this.btn11_Click);
             // 
             // btn12
             // 
@@ -563,6 +607,7 @@ namespace csn_tictactoe_csharp
             this.btn12.Size = new System.Drawing.Size(90, 90);
             this.btn12.TabIndex = 48;
             this.btn12.UseVisualStyleBackColor = true;
+            this.btn12.Click += new System.EventHandler(this.btn12_Click);
             // 
             // btn38
             // 
@@ -573,6 +618,7 @@ namespace csn_tictactoe_csharp
             this.btn38.Size = new System.Drawing.Size(90, 90);
             this.btn38.TabIndex = 49;
             this.btn38.UseVisualStyleBackColor = true;
+            this.btn38.Click += new System.EventHandler(this.btn38_Click);
             // 
             // btn39
             // 
@@ -583,6 +629,7 @@ namespace csn_tictactoe_csharp
             this.btn39.Size = new System.Drawing.Size(90, 90);
             this.btn39.TabIndex = 50;
             this.btn39.UseVisualStyleBackColor = true;
+            this.btn39.Click += new System.EventHandler(this.btn39_Click);
             // 
             // btn40
             // 
@@ -593,6 +640,7 @@ namespace csn_tictactoe_csharp
             this.btn40.Size = new System.Drawing.Size(90, 90);
             this.btn40.TabIndex = 51;
             this.btn40.UseVisualStyleBackColor = true;
+            this.btn40.Click += new System.EventHandler(this.btn40_Click);
             // 
             // frm7x7
             // 
@@ -614,7 +662,7 @@ namespace csn_tictactoe_csharp
             this.Controls.Add(this.btn31);
             this.Controls.Add(this.btn19);
             this.Controls.Add(this.btn18);
-            this.Controls.Add(this.vtn17);
+            this.Controls.Add(this.btn17);
             this.Controls.Add(this.btn34);
             this.Controls.Add(this.btn20);
             this.Controls.Add(this.btn30);
@@ -651,6 +699,7 @@ namespace csn_tictactoe_csharp
             this.Controls.Add(this.lbkytunguoichoi);
             this.Controls.Add(this.lbnguoichoi);
             this.Name = "frm7x7";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm7x7";
             this.Activated += new System.EventHandler(this.frm7x7_Activated);
             this.ResumeLayout(false);
@@ -695,7 +744,7 @@ namespace csn_tictactoe_csharp
         private System.Windows.Forms.Button btn30;
         private System.Windows.Forms.Button btn20;
         private System.Windows.Forms.Button btn34;
-        private System.Windows.Forms.Button vtn17;
+        private System.Windows.Forms.Button btn17;
         private System.Windows.Forms.Button btn18;
         private System.Windows.Forms.Button btn19;
         private System.Windows.Forms.Button btn31;
