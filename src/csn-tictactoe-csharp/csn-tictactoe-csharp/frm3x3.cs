@@ -19,6 +19,9 @@ namespace csn_tictactoe_csharp
         }
 
         private string kytunguoichoi;
+        private string kytumay;
+        private int luoc;
+        private int[] dichuyenmay;
         Button[,] btns = new Button[3, 3];
 
         public string Kytunguoichoi3
@@ -42,30 +45,44 @@ namespace csn_tictactoe_csharp
 
         private void datlainut()
         {
-            btn1.Text = "";
-            btn2.Text = "";
-            btn3.Text = "";
-            btn4.Text = "";
-            btn5.Text = "";
-            btn6.Text = "";
-            btn7.Text = "";
-            btn8.Text = "";
-            btn9.Text = "";
+            btn1.Text = " ";
+            btn2.Text = " ";
+            btn3.Text = " ";
+            btn4.Text = " ";
+            btn5.Text = " ";
+            btn6.Text = " ";
+            btn7.Text = " ";
+            btn8.Text = " ";
+            btn9.Text = " ";
         }
 
         private void Thang(int x, int y, int n, string chu, Button[,] b)
         {
             int dk;
-            dk = dieukieuthang.Thang(x, y, n, chu, b);
-            if (dk == 1 && chu == "X")
+            dk = dieukieuthang.kiemtraThang(x, y, n, chu, b);
+            switch (dk)
             {
-                MessageBox.Show("X thắng!");
-                datlainut();
-            }
-            if (dk == 1 && chu == "O")
-            {
-                MessageBox.Show("O thắng!");
-                datlainut();
+                case 0:
+                    {
+                        MessageBox.Show("Hoà!");
+                        datlainut();
+                        luoc = demluoc.datlailuoc(luoc, kytunguoichoi);
+                        break;
+                    }
+                case 1:
+                    {
+                        MessageBox.Show("X thắng!");
+                        datlainut();
+                        luoc = demluoc.datlailuoc(luoc, kytunguoichoi);
+                        break;
+                    }
+                case -1:
+                    {
+                        MessageBox.Show("O thắng!");
+                        datlainut();
+                        luoc = demluoc.datlailuoc(luoc, kytunguoichoi);
+                        break;
+                    }
             }
         }
 
@@ -75,14 +92,22 @@ namespace csn_tictactoe_csharp
             {
                 case "x":
                     {
+                        kytumay = "O";
                         lbkytunguoichoi.Text = "X";
                         lbkytunguoichoi.ForeColor = Color.Blue;
+                        lbkytumay.Text = "O";
+                        lbkytumay.ForeColor = Color.Red;
+                        luoc = -1;
                         break;
                     }
                 case "o":
                     {
+                        kytumay = "X";
                         lbkytunguoichoi.Text = "O";
                         lbkytunguoichoi.ForeColor = Color.Red;
+                        lbkytumay.Text = "X";
+                        lbkytumay.ForeColor = Color.Blue;
+                        luoc = 1;
                         break;
                     }
             }
@@ -90,200 +115,433 @@ namespace csn_tictactoe_csharp
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            switch (kytunguoichoi)
+            if (luoc == -1)
             {
-                case "x":
-                    {
-                        btn1.Text = "X";
-                        btn1.ForeColor = Color.Blue;
-                        break;
-                    }
-                case "o":
-                    {
-                        btn1.Text = "O";
-                        btn1.ForeColor = Color.Red;
-                        break;
-                    }
-            }
+                switch (kytunguoichoi)
+                {
+                    case "x":
+                        {
+                            btn1.Text = "X";
+                            btn1.ForeColor = Color.Blue;
+                            break;
+                        }
+                    case "o":
+                        {
+                            btn1.Text = "O";
+                            btn1.ForeColor = Color.Red;
+                            break;
+                        }
+                }
 
-            //Thang(btn1.Text);
-            Thang(0, 0, 3, btn1.Text, btns);
+                luoc = demluoc.capnhatluoc(luoc);
+                Thang(0, 0, 3, btn1.Text, btns);
+            }
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            switch (kytunguoichoi)
+            if (luoc == -1)
             {
-                case "x":
-                    {
-                        btn2.Text = "X";
-                        btn2.ForeColor = Color.Blue;
-                        break;
-                    }
-                case "o":
-                    {
-                        btn2.Text = "O";
-                        btn2.ForeColor = Color.Red;
-                        break;
-                    }
-            }
+                switch (kytunguoichoi)
+                {
+                    case "x":
+                        {
+                            btn2.Text = "X";
+                            btn2.ForeColor = Color.Blue;
+                            break;
+                        }
+                    case "o":
+                        {
+                            btn2.Text = "O";
+                            btn2.ForeColor = Color.Red;
+                            break;
+                        }
+                }
 
-            //Thang(btn2.Text);
-            Thang(0, 1, 3, btn2.Text, btns);
+                luoc = demluoc.capnhatluoc(luoc);
+                Thang(0, 1, 3, btn2.Text, btns);
+            }
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            switch (kytunguoichoi)
+            if (luoc == -1)
             {
-                case "x":
-                    {
-                        btn3.Text = "X";
-                        btn3.ForeColor = Color.Blue;
-                        break;
-                    }
-                case "o":
-                    {
-                        btn3.Text = "O";
-                        btn3.ForeColor = Color.Red;
-                        break;
-                    }
-            }
+                switch (kytunguoichoi)
+                {
+                    case "x":
+                        {
+                            btn3.Text = "X";
+                            btn3.ForeColor = Color.Blue;
+                            break;
+                        }
+                    case "o":
+                        {
+                            btn3.Text = "O";
+                            btn3.ForeColor = Color.Red;
+                            break;
+                        }
+                }
 
-            //Thang(btn3.Text);
-            Thang(0, 2, 3, btn3.Text, btns);
+                luoc = demluoc.capnhatluoc(luoc);
+                Thang(0, 2, 3, btn3.Text, btns);
+            }
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            switch (kytunguoichoi)
+            if (luoc == -1)
             {
-                case "x":
-                    {
-                        btn4.Text = "X";
-                        btn4.ForeColor = Color.Blue;
-                        break;
-                    }
-                case "o":
-                    {
-                        btn4.Text = "O";
-                        btn4.ForeColor = Color.Red;
-                        break;
-                    }
-            }
+                switch (kytunguoichoi)
+                {
+                    case "x":
+                        {
+                            btn4.Text = "X";
+                            btn4.ForeColor = Color.Blue;
+                            break;
+                        }
+                    case "o":
+                        {
+                            btn4.Text = "O";
+                            btn4.ForeColor = Color.Red;
+                            break;
+                        }
+                }
 
-            //Thang(btn4.Text);
-            Thang(1, 0, 3, btn4.Text, btns);
+                luoc = demluoc.capnhatluoc(luoc);
+                Thang(1, 0, 3, btn4.Text, btns);
+            }
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            switch (kytunguoichoi)
+            if (luoc == -1)
             {
-                case "x":
-                    {
-                        btn5.Text = "X";
-                        btn5.ForeColor = Color.Blue;
-                        break;
-                    }
-                case "o":
-                    {
-                        btn5.Text = "O";
-                        btn5.ForeColor = Color.Red;
-                        break;
-                    }
-            }
+                switch (kytunguoichoi)
+                {
+                    case "x":
+                        {
+                            btn5.Text = "X";
+                            btn5.ForeColor = Color.Blue;
+                            break;
+                        }
+                    case "o":
+                        {
+                            btn5.Text = "O";
+                            btn5.ForeColor = Color.Red;
+                            break;
+                        }
+                }
 
-            //Thang(btn5.Text);
-            Thang(1, 1, 3, btn5.Text, btns);
+                luoc = demluoc.capnhatluoc(luoc);
+                Thang(1, 1, 3, btn5.Text, btns);
+            }
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            switch (kytunguoichoi)
+            if (luoc == -1)
             {
-                case "x":
-                    {
-                        btn6.Text = "X";
-                        btn6.ForeColor = Color.Blue;
-                        break;
-                    }
-                case "o":
-                    {
-                        btn6.Text = "O";
-                        btn6.ForeColor = Color.Red;
-                        break;
-                    }
-            }
+                switch (kytunguoichoi)
+                {
+                    case "x":
+                        {
+                            btn6.Text = "X";
+                            btn6.ForeColor = Color.Blue;
+                            break;
+                        }
+                    case "o":
+                        {
+                            btn6.Text = "O";
+                            btn6.ForeColor = Color.Red;
+                            break;
+                        }
+                }
 
-            //Thang(btn6.Text);
-            Thang(1, 2, 3, btn6.Text, btns);
+                luoc = demluoc.capnhatluoc(luoc);
+                Thang(1, 2, 3, btn6.Text, btns);
+            }
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            switch (kytunguoichoi)
+            if (luoc == -1)
             {
-                case "x":
-                    {
-                        btn7.Text = "X";
-                        btn7.ForeColor = Color.Blue;
-                        break;
-                    }
-                case "o":
-                    {
-                        btn7.Text = "O";
-                        btn7.ForeColor = Color.Red;
-                        break;
-                    }
-            }
+                switch (kytunguoichoi)
+                {
+                    case "x":
+                        {
+                            btn7.Text = "X";
+                            btn7.ForeColor = Color.Blue;
+                            break;
+                        }
+                    case "o":
+                        {
+                            btn7.Text = "O";
+                            btn7.ForeColor = Color.Red;
+                            break;
+                        }
+                }
 
-            //Thang(btn7.Text);
-            Thang(2, 0, 3, btn7.Text, btns);
+                luoc = demluoc.capnhatluoc(luoc);
+                Thang(2, 0, 3, btn7.Text, btns);
+            }
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            switch (kytunguoichoi)
+            if (luoc == -1)
             {
-                case "x":
-                    {
-                        btn8.Text = "X";
-                        btn8.ForeColor = Color.Blue;
-                        break;
-                    }
-                case "o":
-                    {
-                        btn8.Text = "O";
-                        btn8.ForeColor = Color.Red;
-                        break;
-                    }
-            }
+                switch (kytunguoichoi)
+                {
+                    case "x":
+                        {
+                            btn8.Text = "X";
+                            btn8.ForeColor = Color.Blue;
+                            break;
+                        }
+                    case "o":
+                        {
+                            btn8.Text = "O";
+                            btn8.ForeColor = Color.Red;
+                            break;
+                        }
+                }
 
-            //Thang(btn8.Text);
-            Thang(2, 1, 3, btn8.Text, btns);
+                luoc = demluoc.capnhatluoc(luoc);
+                Thang(2, 1, 3, btn8.Text, btns);
+            }
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            switch (kytunguoichoi)
+            if (luoc == -1)
             {
-                case "x":
-                    {
-                        btn9.Text = "X";
-                        btn9.ForeColor = Color.Blue;
-                        break;
-                    }
-                case "o":
-                    {
-                        btn9.Text = "O";
-                        btn9.ForeColor = Color.Red;
-                        break;
-                    }
-            }
+                switch (kytunguoichoi)
+                {
+                    case "x":
+                        {
+                            btn9.Text = "X";
+                            btn9.ForeColor = Color.Blue;
+                            break;
+                        }
+                    case "o":
+                        {
+                            btn9.Text = "O";
+                            btn9.ForeColor = Color.Red;
+                            break;
+                        }
+                }
 
-            //Thang(btn9.Text);
-            Thang(2, 2, 3, btn9.Text, btns);
+                luoc = demluoc.capnhatluoc(luoc);
+                Thang(2, 2, 3, btn9.Text, btns);
+            }
+        }
+
+        private void btnmay_Click(object sender, EventArgs e)
+        {
+            if (luoc == 1)
+            {
+                dichuyenmay = minimax.Dichuyen(btns, 3, kytumay);
+                //btn1
+                if (dichuyenmay[0] == 0 && dichuyenmay[1] == 0)
+                {
+                    switch (kytumay)
+                    {
+                        case "X":
+                            {
+                                btn1.Text = "X";
+                                btn1.ForeColor = Color.Blue;
+                                break;
+                            }
+                        case "O":
+                            {
+                                btn1.Text = "O";
+                                btn1.ForeColor = Color.Red;
+                                break;
+                            }
+                    }
+
+                    luoc = demluoc.capnhatluoc(luoc);
+                    Thang(0, 0, 3, btn1.Text, btns);
+                }
+                //btn2
+                if (dichuyenmay[0] == 0 && dichuyenmay[1] == 1)
+                {
+                    switch (kytumay)
+                    {
+                        case "X":
+                            {
+                                btn2.Text = "X";
+                                btn2.ForeColor = Color.Blue;
+                                break;
+                            }
+                        case "O":
+                            {
+                                btn2.Text = "O";
+                                btn2.ForeColor = Color.Red;
+                                break;
+                            }
+                    }
+
+                    luoc = demluoc.capnhatluoc(luoc);
+                    Thang(0, 1, 3, btn2.Text, btns);
+                }
+                //btn3
+                if (dichuyenmay[0] == 0 && dichuyenmay[1] == 2)
+                {
+                    switch (kytumay)
+                    {
+                        case "X":
+                            {
+                                btn3.Text = "X";
+                                btn3.ForeColor = Color.Blue;
+                                break;
+                            }
+                        case "O":
+                            {
+                                btn3.Text = "O";
+                                btn3.ForeColor = Color.Red;
+                                break;
+                            }
+                    }
+
+                    luoc = demluoc.capnhatluoc(luoc);
+                    Thang(0, 2, 3, btn3.Text, btns);
+                }
+                //btn4
+                if (dichuyenmay[0] == 1 && dichuyenmay[1] == 0)
+                {
+                    switch (kytumay)
+                    {
+                        case "X":
+                            {
+                                btn4.Text = "X";
+                                btn4.ForeColor = Color.Blue;
+                                break;
+                            }
+                        case "O":
+                            {
+                                btn4.Text = "O";
+                                btn4.ForeColor = Color.Red;
+                                break;
+                            }
+                    }
+
+                    luoc = demluoc.capnhatluoc(luoc);
+                    Thang(1, 0, 3, btn4.Text, btns);
+                }
+                //btn5
+                if (dichuyenmay[0] == 1 && dichuyenmay[1] == 1)
+                {
+                    switch (kytumay)
+                    {
+                        case "X":
+                            {
+                                btn5.Text = "X";
+                                btn5.ForeColor = Color.Blue;
+                                break;
+                            }
+                        case "O":
+                            {
+                                btn5.Text = "O";
+                                btn5.ForeColor = Color.Red;
+                                break;
+                            }
+                    }
+
+                    luoc = demluoc.capnhatluoc(luoc);
+                    Thang(1, 1, 3, btn5.Text, btns);
+                }
+                //btn6
+                if (dichuyenmay[0] == 1 && dichuyenmay[1] == 2)
+                {
+                    switch (kytumay)
+                    {
+                        case "X":
+                            {
+                                btn6.Text = "X";
+                                btn6.ForeColor = Color.Blue;
+                                break;
+                            }
+                        case "O":
+                            {
+                                btn6.Text = "O";
+                                btn6.ForeColor = Color.Red;
+                                break;
+                            }
+                    }
+
+                    luoc = demluoc.capnhatluoc(luoc);
+                    Thang(1, 2, 3, btn5.Text, btns);
+                }
+                //btn7
+                if (dichuyenmay[0] == 2 && dichuyenmay[1] == 0)
+                {
+                    switch (kytumay)
+                    {
+                        case "X":
+                            {
+                                btn7.Text = "X";
+                                btn7.ForeColor = Color.Blue;
+                                break;
+                            }
+                        case "O":
+                            {
+                                btn7.Text = "O";
+                                btn7.ForeColor = Color.Red;
+                                break;
+                            }
+                    }
+
+                    luoc = demluoc.capnhatluoc(luoc);
+                    Thang(2, 0, 3, btn7.Text, btns);
+                }
+                //btn8
+                if (dichuyenmay[0] == 2 && dichuyenmay[1] == 1)
+                {
+                    switch (kytumay)
+                    {
+                        case "X":
+                            {
+                                btn8.Text = "X";
+                                btn8.ForeColor = Color.Blue;
+                                break;
+                            }
+                        case "O":
+                            {
+                                btn8.Text = "O";
+                                btn8.ForeColor = Color.Red;
+                                break;
+                            }
+                    }
+
+                    luoc = demluoc.capnhatluoc(luoc);
+                    Thang(2, 1, 3, btn8.Text, btns);
+                }
+                //btn9
+                if (dichuyenmay[0] == 2 && dichuyenmay[1] == 2)
+                {
+                    switch (kytumay)
+                    {
+                        case "X":
+                            {
+                                btn9.Text = "X";
+                                btn9.ForeColor = Color.Blue;
+                                break;
+                            }
+                        case "O":
+                            {
+                                btn9.Text = "O";
+                                btn9.ForeColor = Color.Red;
+                                break;
+                            }
+                    }
+
+                    luoc = demluoc.capnhatluoc(luoc);
+                    Thang(2, 2, 3, btn9.Text, btns);
+                }
+            }
         }
     }
 }

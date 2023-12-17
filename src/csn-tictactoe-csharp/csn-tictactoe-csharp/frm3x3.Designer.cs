@@ -40,6 +40,9 @@ namespace csn_tictactoe_csharp
             this.btn7 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
+            this.lbmay = new System.Windows.Forms.Label();
+            this.lbkytumay = new System.Windows.Forms.Label();
+            this.btnmay = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbnguoichoi
@@ -71,6 +74,7 @@ namespace csn_tictactoe_csharp
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(90, 90);
             this.btn1.TabIndex = 2;
+            this.btn1.Text = " ";
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
@@ -82,6 +86,7 @@ namespace csn_tictactoe_csharp
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(90, 90);
             this.btn2.TabIndex = 3;
+            this.btn2.Text = " ";
             this.btn2.UseVisualStyleBackColor = true;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
@@ -93,6 +98,7 @@ namespace csn_tictactoe_csharp
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(90, 90);
             this.btn3.TabIndex = 4;
+            this.btn3.Text = " ";
             this.btn3.UseVisualStyleBackColor = true;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
@@ -104,6 +110,7 @@ namespace csn_tictactoe_csharp
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(90, 90);
             this.btn4.TabIndex = 5;
+            this.btn4.Text = " ";
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
@@ -115,6 +122,7 @@ namespace csn_tictactoe_csharp
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(90, 90);
             this.btn5.TabIndex = 6;
+            this.btn5.Text = " ";
             this.btn5.UseVisualStyleBackColor = true;
             this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
@@ -126,6 +134,7 @@ namespace csn_tictactoe_csharp
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(90, 90);
             this.btn6.TabIndex = 7;
+            this.btn6.Text = " ";
             this.btn6.UseVisualStyleBackColor = true;
             this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
@@ -137,6 +146,7 @@ namespace csn_tictactoe_csharp
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(90, 90);
             this.btn7.TabIndex = 8;
+            this.btn7.Text = " ";
             this.btn7.UseVisualStyleBackColor = true;
             this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
@@ -148,6 +158,7 @@ namespace csn_tictactoe_csharp
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(90, 90);
             this.btn8.TabIndex = 9;
+            this.btn8.Text = " ";
             this.btn8.UseVisualStyleBackColor = true;
             this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
@@ -159,14 +170,51 @@ namespace csn_tictactoe_csharp
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(90, 90);
             this.btn9.TabIndex = 10;
+            this.btn9.Text = " ";
             this.btn9.UseVisualStyleBackColor = true;
             this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            // 
+            // lbmay
+            // 
+            this.lbmay.AutoSize = true;
+            this.lbmay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbmay.Location = new System.Drawing.Point(392, 9);
+            this.lbmay.Name = "lbmay";
+            this.lbmay.Size = new System.Drawing.Size(85, 37);
+            this.lbmay.TabIndex = 11;
+            this.lbmay.Text = "Máy:";
+            // 
+            // lbkytumay
+            // 
+            this.lbkytumay.AutoSize = true;
+            this.lbkytumay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbkytumay.Location = new System.Drawing.Point(463, 9);
+            this.lbkytumay.Margin = new System.Windows.Forms.Padding(0);
+            this.lbkytumay.Name = "lbkytumay";
+            this.lbkytumay.Size = new System.Drawing.Size(34, 37);
+            this.lbkytumay.TabIndex = 12;
+            this.lbkytumay.Text = "?";
+            // 
+            // btnmay
+            // 
+            this.btnmay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmay.Location = new System.Drawing.Point(450, 87);
+            this.btnmay.Margin = new System.Windows.Forms.Padding(9);
+            this.btnmay.Name = "btnmay";
+            this.btnmay.Size = new System.Drawing.Size(90, 90);
+            this.btnmay.TabIndex = 13;
+            this.btnmay.Text = "Máy di chuyển";
+            this.btnmay.UseVisualStyleBackColor = true;
+            this.btnmay.Click += new System.EventHandler(this.btnmay_Click);
             // 
             // frm3x3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 425);
+            this.Controls.Add(this.btnmay);
+            this.Controls.Add(this.lbkytumay);
+            this.Controls.Add(this.lbmay);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn7);
@@ -200,5 +248,8 @@ namespace csn_tictactoe_csharp
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn9;
+        private System.Windows.Forms.Label lbmay;
+        private System.Windows.Forms.Label lbkytumay;
+        private System.Windows.Forms.Button btnmay;
     }
 }

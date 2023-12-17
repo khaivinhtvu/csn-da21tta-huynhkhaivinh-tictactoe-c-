@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="demluoc.cs" />
     <Compile Include="dieukieuthang.cs" />
     <Compile Include="frm3x3.cs">
       <SubType>Form</SubType>
@@ -71,6 +72,7 @@
     <Compile Include="frmmenuchinh.Designer.cs">
       <DependentUpon>frmmenuchinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="minimax.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm3x3.resx">

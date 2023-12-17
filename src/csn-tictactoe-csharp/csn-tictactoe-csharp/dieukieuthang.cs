@@ -9,6 +9,45 @@ namespace csn_tictactoe_csharp
 {
     public static class dieukieuthang
     {
+        public static int kiemtraThang(int x, int y, int n, string chu, Button[,] b)
+        {
+            int dk;
+            int dem = 0;
+            dk = Thang(x, y, n, chu, b);
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (b[i, j].Text != " ")
+                    {
+                        dem++;
+                    }
+                }
+            }
+
+            if (dem == n * n)
+            {
+                return 0;
+            }
+
+            if (dk == 1 && chu == "X")
+            {
+                return 1;
+            }
+
+            if (dk == 1 && chu == "O")
+            {
+                return -1;
+            }
+
+            if (dk == 0)
+            {
+                return 2;
+            }
+
+            return 3;
+        }
 
         public static int Thang(int x, int y, int n, string kytu, Button[,] a)
         {
