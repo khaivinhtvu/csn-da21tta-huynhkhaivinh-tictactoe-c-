@@ -23,6 +23,7 @@ namespace csn_tictactoe_csharp
         private int luoc;
         private int[] dichuyenmay;
         Button[,] btns = new Button[5, 5];
+        private int chieusau = 3;
 
         private void khoitao()
         {
@@ -94,7 +95,29 @@ namespace csn_tictactoe_csharp
         {
             if (luoc == 1)
             {
-                dichuyenmay = minimax.Dichuyen(btns, 5, kytumay);
+                dichuyenmay = minimax.Dichuyen(btns, 5, chieusau, kytumay);
+
+                for (int i = 0; i < 5; i++)
+                {
+                    for (int j = 0; j < 5; j++)
+                    {
+                        if (i == dichuyenmay[0] && j == dichuyenmay[1] && btns[i, j].Text == " ")
+                        {
+                            btns[i, j].Text = kytumay;
+                            if (kytumay == "X")
+                            {
+                                btns[i, j].ForeColor = Color.Blue;
+                            }
+                            if (kytumay == "O")
+                            {
+                                btns[i, j].ForeColor = Color.Red;
+                            }
+                            luoc = demluoc.capnhatluoc(luoc);
+                            Thang(i, j, 5, kytumay, btns);
+                            break;
+                        }
+                    }
+                }
             }
         }
 
@@ -137,38 +160,9 @@ namespace csn_tictactoe_csharp
             set { kytunguoichoi = value; }
         }
 
-        private void frm5x5_Activated(object sender, EventArgs e)
-        {
-            datlainut();
-            switch (kytunguoichoi)
-            {
-                case "x":
-                    {
-                        kytumay = "O";
-                        lbkytunguoichoi.Text = "X";
-                        lbkytunguoichoi.ForeColor = Color.Blue;
-                        lbkytumay.Text = "O";
-                        lbkytumay.ForeColor = Color.Red;
-                        luoc = -1;
-                        break;
-                    }
-                case "o":
-                    {
-                        kytumay = "X";
-                        lbkytunguoichoi.Text = "O";
-                        lbkytunguoichoi.ForeColor = Color.Red;
-                        lbkytumay.Text = "X";
-                        lbkytumay.ForeColor = Color.Blue;
-                        luoc = 1;
-                        dichuyen();
-                        break;
-                    }
-            }
-        }
-
         private void btn1_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn1.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -194,7 +188,7 @@ namespace csn_tictactoe_csharp
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn2.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -220,7 +214,7 @@ namespace csn_tictactoe_csharp
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn3.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -246,7 +240,7 @@ namespace csn_tictactoe_csharp
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn4.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -272,7 +266,7 @@ namespace csn_tictactoe_csharp
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn5.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -298,7 +292,7 @@ namespace csn_tictactoe_csharp
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn6.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -324,7 +318,7 @@ namespace csn_tictactoe_csharp
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn7.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -350,7 +344,7 @@ namespace csn_tictactoe_csharp
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn8.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -376,7 +370,7 @@ namespace csn_tictactoe_csharp
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn9.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -402,7 +396,7 @@ namespace csn_tictactoe_csharp
 
         private void btn10_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn10.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -428,7 +422,7 @@ namespace csn_tictactoe_csharp
 
         private void btn11_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn11.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -454,7 +448,7 @@ namespace csn_tictactoe_csharp
 
         private void btn12_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn12.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -480,7 +474,7 @@ namespace csn_tictactoe_csharp
 
         private void btn13_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn13.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -506,7 +500,7 @@ namespace csn_tictactoe_csharp
 
         private void btn14_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn14.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -532,7 +526,7 @@ namespace csn_tictactoe_csharp
 
         private void btn15_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn15.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -558,7 +552,7 @@ namespace csn_tictactoe_csharp
 
         private void btn16_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn16.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -584,7 +578,7 @@ namespace csn_tictactoe_csharp
 
         private void btn17_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn17.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -610,7 +604,7 @@ namespace csn_tictactoe_csharp
 
         private void btn18_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn18.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -636,7 +630,7 @@ namespace csn_tictactoe_csharp
 
         private void btn19_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn19.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -662,7 +656,7 @@ namespace csn_tictactoe_csharp
 
         private void btn20_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn20.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -688,7 +682,7 @@ namespace csn_tictactoe_csharp
 
         private void btn21_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn21.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -714,7 +708,7 @@ namespace csn_tictactoe_csharp
 
         private void btn22_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn22.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -740,7 +734,7 @@ namespace csn_tictactoe_csharp
 
         private void btn23_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn23.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -766,7 +760,7 @@ namespace csn_tictactoe_csharp
 
         private void btn24_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn24.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -792,7 +786,7 @@ namespace csn_tictactoe_csharp
 
         private void btn25_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn25.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -813,6 +807,35 @@ namespace csn_tictactoe_csharp
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(4, 4, 5, btn25.Text, btns);
                 dichuyen();
+            }
+        }
+
+        private void frm5x5_Load(object sender, EventArgs e)
+        {
+            datlainut();
+            switch (kytunguoichoi)
+            {
+                case "x":
+                    {
+                        kytumay = "O";
+                        lbkytunguoichoi.Text = "X";
+                        lbkytunguoichoi.ForeColor = Color.Blue;
+                        lbkytumay.Text = "O";
+                        lbkytumay.ForeColor = Color.Red;
+                        luoc = -1;
+                        break;
+                    }
+                case "o":
+                    {
+                        kytumay = "X";
+                        lbkytunguoichoi.Text = "O";
+                        lbkytunguoichoi.ForeColor = Color.Red;
+                        lbkytumay.Text = "X";
+                        lbkytumay.ForeColor = Color.Blue;
+                        luoc = 1;
+                        dichuyen();
+                        break;
+                    }
             }
         }
     }

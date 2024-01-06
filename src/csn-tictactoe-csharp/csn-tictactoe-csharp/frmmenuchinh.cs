@@ -114,33 +114,29 @@ namespace csn_tictactoe_csharp
                 {
                     case 1:
                         MessageBox.Show("Chọn ký tự của bạn");
-                        kytu = null;
-                        chedochoi = null;
-                        btnx.BackColor = SystemColors.Control;
-                        btno.BackColor = SystemColors.Control;
-                        btn3x3.BackColor = SystemColors.Control;
-                        btn5x5.BackColor = SystemColors.Control;
-                        btn7x7.BackColor = SystemColors.Control;
+                        btnx.BackColor = Color.White;
+                        btno.BackColor = Color.White;
+                        btn3x3.BackColor = Color.White;
+                        btn5x5.BackColor = Color.White;
+                        btn7x7.BackColor = Color.White;
                         break;
                     case 2:
                         MessageBox.Show("Chọn chế độ chơi");
-                        kytu = null;
-                        chedochoi = null;
-                        btnx.BackColor = SystemColors.Control;
-                        btno.BackColor = SystemColors.Control;
-                        btn3x3.BackColor = SystemColors.Control;
-                        btn5x5.BackColor = SystemColors.Control;
-                        btn7x7.BackColor = SystemColors.Control;
+                        btnx.BackColor = Color.White;
+                        btno.BackColor = Color.White;
+                        btn3x3.BackColor = Color.White;
+                        btn5x5.BackColor = Color.White;
+                        btn7x7.BackColor = Color.White;
                         break;
                     case 3:
                         MessageBox.Show("Chọn ký tự của bạn và chọn chế độ chơi");
                         kytu = null;
                         chedochoi = null;
-                        btnx.BackColor = SystemColors.Control;
-                        btno.BackColor = SystemColors.Control;
-                        btn3x3.BackColor = SystemColors.Control;
-                        btn5x5.BackColor = SystemColors.Control;
-                        btn7x7.BackColor = SystemColors.Control;
+                        btnx.BackColor = Color.White;
+                        btno.BackColor = Color.White;
+                        btn3x3.BackColor = Color.White;
+                        btn5x5.BackColor = Color.White;
+                        btn7x7.BackColor = Color.White;
                         break;
                 }
             }
@@ -149,40 +145,88 @@ namespace csn_tictactoe_csharp
 
         private void btnx_Click(object sender, EventArgs e)
         {
-            kytu = "x";
-            btnx.BackColor = Color.YellowGreen;
-            btno.BackColor = SystemColors.Control;
+            if (kytu == null || kytu == "o")
+            {
+                kytu = "x";
+                btnx.BackColor = Color.YellowGreen;
+                btno.BackColor = Color.White;
+            }
+            else
+            {
+                kytu = null;
+                btnx.BackColor = Color.White;
+                btno.BackColor = Color.White;
+            }
         }
 
         private void btno_Click(object sender, EventArgs e)
         {
-            kytu = "o";
-            btno.BackColor = Color.YellowGreen;
-            btnx.BackColor = SystemColors.Control;
+            if (kytu == null || kytu == "x")
+            {
+                kytu = "o";
+                btno.BackColor = Color.YellowGreen;
+                btnx.BackColor = Color.White;
+            }
+            else
+            {
+                kytu = null;
+                btnx.BackColor = Color.White;
+                btno.BackColor = Color.White;
+            }
         }
 
         private void btn3x3_Click(object sender, EventArgs e)
         {
-            chedochoi = "3x3";
-            btn3x3.BackColor = Color.YellowGreen;
-            btn5x5.BackColor = SystemColors.Control;
-            btn7x7.BackColor = SystemColors.Control;
+            if (chedochoi == null || chedochoi == "5x5" || chedochoi == "7x7")
+            {
+                chedochoi = "3x3";
+                btn3x3.BackColor = Color.YellowGreen;
+                btn5x5.BackColor = Color.White;
+                btn7x7.BackColor = Color.White;
+            }
+            else
+            {
+                chedochoi = null;
+                btn3x3.BackColor = Color.White;
+                btn5x5.BackColor = Color.White;
+                btn7x7.BackColor = Color.White;
+            }
         }
 
         private void btn5x5_Click(object sender, EventArgs e)
         {
-            chedochoi = "5x5";
-            btn5x5.BackColor = Color.YellowGreen;
-            btn3x3.BackColor = SystemColors.Control;
-            btn7x7.BackColor = SystemColors.Control;
+            if (chedochoi == null || chedochoi == "3x3" || chedochoi == "7x7")
+            {
+                chedochoi = "5x5";
+                btn5x5.BackColor = Color.YellowGreen;
+                btn3x3.BackColor = Color.White;
+                btn7x7.BackColor = Color.White;
+            }
+            else
+            {
+                chedochoi = null;
+                btn3x3.BackColor = Color.White;
+                btn5x5.BackColor = Color.White;
+                btn7x7.BackColor = Color.White;
+            }
         }
 
         private void btn7x7_Click(object sender, EventArgs e)
         {
-            chedochoi = "7x7";
-            btn7x7.BackColor = Color.YellowGreen;
-            btn5x5.BackColor = SystemColors.Control;
-            btn3x3.BackColor = SystemColors.Control;
+            if (chedochoi == null || chedochoi == "3x3" || chedochoi == "5x5")
+            {
+                chedochoi = "7x7";
+                btn7x7.BackColor = Color.YellowGreen;
+                btn3x3.BackColor = Color.White;
+                btn5x5.BackColor = Color.White;
+            }
+            else
+            {
+                chedochoi = null;
+                btn3x3.BackColor = Color.White;
+                btn5x5.BackColor = Color.White;
+                btn7x7.BackColor = Color.White;
+            }
         }
     }
 }

@@ -12,11 +12,17 @@ namespace csn_tictactoe_csharp
         private static int MAX = 1000;
         private static int MIN = -1000;
 
-        public static int Minimax(Button[,] mang, int x, int y, int n, bool maxPlayer)
+        public static int Minimax(Button[,] mang, int x, int y, int n, int depth, bool maxPlayer)
         {
             int values;
             int ketqua1 = dieukieuthang.kiemtraThang(x, y, n, "X", mang);
             int ketqua2 = dieukieuthang.kiemtraThang(x, y, n, "O", mang);
+
+            if (depth == 0)
+            {
+                values = 0;
+                return values;
+            }
 
             if (ketqua1 == 1)
             {
@@ -47,7 +53,7 @@ namespace csn_tictactoe_csharp
                         if (mang[i, j].Text == " ")
                         {
                             mang[i, j].Text = "X";
-                            values = Math.Max(values, Minimax(mang, i, j, n, false));
+                            values = Math.Max(values, Minimax(mang, i, j, n, depth - 1, false));
                             mang[i, j].Text = " ";
                         }
                     }
@@ -66,7 +72,7 @@ namespace csn_tictactoe_csharp
                         if (mang[i, j].Text == " ")
                         {
                             mang[i, j].Text = "O";
-                            values = Math.Min(values, Minimax(mang, i, j, n, true));
+                            values = Math.Min(values, Minimax(mang, i, j, n, depth - 1, true));
                             mang[i, j].Text = " ";
                         }
                     }
@@ -76,7 +82,7 @@ namespace csn_tictactoe_csharp
             }
         }
 
-        public static int[] Dichuyen(Button[,] mang, int n, string kytumay)
+        public static int[] Dichuyen(Button[,] mang, int n, int depth, string kytumay)
         {
             int[] dichuyen = new int[2];
             int diem;
@@ -92,7 +98,7 @@ namespace csn_tictactoe_csharp
                         if (mang[i, j].Text == " ")
                         {
                             mang[i, j].Text = "X";
-                            diem = Minimax(mang, i, j, n, false);
+                            diem = Minimax(mang, i, j, n, depth, false);
                             mang[i, j].Text = " ";
                             if (diem > diemtotnhat)
                             {
@@ -114,7 +120,7 @@ namespace csn_tictactoe_csharp
                         if (mang[i, j].Text == " ")
                         {
                             mang[i, j].Text = "O";
-                            diem = Minimax(mang, i, j, n, true);
+                            diem = Minimax(mang, i, j, n, depth, true);
                             mang[i, j].Text = " ";
                             if (diem < diemtotnhat)
                             {
@@ -126,7 +132,6 @@ namespace csn_tictactoe_csharp
                     }
                 }
             }
-            
             
             return dichuyen;
         }

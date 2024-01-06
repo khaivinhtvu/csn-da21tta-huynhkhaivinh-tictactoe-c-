@@ -85,7 +85,7 @@ namespace csn_tictactoe_csharp
             // 
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.Location = new System.Drawing.Point(65, 77);
-            this.btn1.Margin = new System.Windows.Forms.Padding(9);
+            this.btn1.Margin = new System.Windows.Forms.Padding(5);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(90, 90);
             this.btn1.TabIndex = 3;
@@ -395,7 +395,7 @@ namespace csn_tictactoe_csharp
             // 
             this.lbkytumay.AutoSize = true;
             this.lbkytumay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbkytumay.Location = new System.Drawing.Point(534, 9);
+            this.lbkytumay.Location = new System.Drawing.Point(547, 9);
             this.lbkytumay.Margin = new System.Windows.Forms.Padding(0);
             this.lbkytumay.Name = "lbkytumay";
             this.lbkytumay.Size = new System.Drawing.Size(34, 37);
@@ -438,8 +438,8 @@ namespace csn_tictactoe_csharp
             this.Controls.Add(this.lbnguoichoi);
             this.Name = "frm5x5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm5x5";
-            this.Activated += new System.EventHandler(this.frm5x5_Activated);
+            this.Text = "Trò chơi tic-tac-toe";
+            this.Load += new System.EventHandler(this.frm5x5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

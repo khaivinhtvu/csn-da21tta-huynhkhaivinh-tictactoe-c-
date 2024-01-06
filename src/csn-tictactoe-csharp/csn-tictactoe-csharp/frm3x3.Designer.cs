@@ -58,7 +58,7 @@ namespace csn_tictactoe_csharp
             // 
             this.lbkytunguoichoi.AutoSize = true;
             this.lbkytunguoichoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbkytunguoichoi.Location = new System.Drawing.Point(182, 9);
+            this.lbkytunguoichoi.Location = new System.Drawing.Point(194, 9);
             this.lbkytunguoichoi.Margin = new System.Windows.Forms.Padding(0);
             this.lbkytunguoichoi.Name = "lbkytunguoichoi";
             this.lbkytunguoichoi.Size = new System.Drawing.Size(34, 37);
@@ -68,7 +68,7 @@ namespace csn_tictactoe_csharp
             // btn1
             // 
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(126, 91);
+            this.btn1.Location = new System.Drawing.Point(125, 72);
             this.btn1.Margin = new System.Windows.Forms.Padding(9);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(90, 90);
@@ -80,7 +80,7 @@ namespace csn_tictactoe_csharp
             // btn2
             // 
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(234, 91);
+            this.btn2.Location = new System.Drawing.Point(233, 72);
             this.btn2.Margin = new System.Windows.Forms.Padding(9);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(90, 90);
@@ -92,7 +92,7 @@ namespace csn_tictactoe_csharp
             // btn3
             // 
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(342, 91);
+            this.btn3.Location = new System.Drawing.Point(341, 72);
             this.btn3.Margin = new System.Windows.Forms.Padding(9);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(90, 90);
@@ -104,7 +104,7 @@ namespace csn_tictactoe_csharp
             // btn4
             // 
             this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(126, 199);
+            this.btn4.Location = new System.Drawing.Point(125, 180);
             this.btn4.Margin = new System.Windows.Forms.Padding(9);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(90, 90);
@@ -116,7 +116,7 @@ namespace csn_tictactoe_csharp
             // btn5
             // 
             this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(233, 199);
+            this.btn5.Location = new System.Drawing.Point(232, 180);
             this.btn5.Margin = new System.Windows.Forms.Padding(9);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(90, 90);
@@ -128,7 +128,7 @@ namespace csn_tictactoe_csharp
             // btn6
             // 
             this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(342, 199);
+            this.btn6.Location = new System.Drawing.Point(341, 180);
             this.btn6.Margin = new System.Windows.Forms.Padding(9);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(90, 90);
@@ -140,7 +140,7 @@ namespace csn_tictactoe_csharp
             // btn7
             // 
             this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(126, 307);
+            this.btn7.Location = new System.Drawing.Point(125, 288);
             this.btn7.Margin = new System.Windows.Forms.Padding(9);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(90, 90);
@@ -152,7 +152,7 @@ namespace csn_tictactoe_csharp
             // btn8
             // 
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(234, 307);
+            this.btn8.Location = new System.Drawing.Point(233, 288);
             this.btn8.Margin = new System.Windows.Forms.Padding(9);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(90, 90);
@@ -164,7 +164,7 @@ namespace csn_tictactoe_csharp
             // btn9
             // 
             this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(342, 307);
+            this.btn9.Location = new System.Drawing.Point(341, 288);
             this.btn9.Margin = new System.Windows.Forms.Padding(9);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(90, 90);
@@ -187,7 +187,7 @@ namespace csn_tictactoe_csharp
             // 
             this.lbkytumay.AutoSize = true;
             this.lbkytumay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbkytumay.Location = new System.Drawing.Point(463, 9);
+            this.lbkytumay.Location = new System.Drawing.Point(480, 9);
             this.lbkytumay.Margin = new System.Windows.Forms.Padding(0);
             this.lbkytumay.Name = "lbkytumay";
             this.lbkytumay.Size = new System.Drawing.Size(34, 37);
@@ -198,7 +198,7 @@ namespace csn_tictactoe_csharp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 451);
+            this.ClientSize = new System.Drawing.Size(553, 407);
             this.Controls.Add(this.lbkytumay);
             this.Controls.Add(this.lbmay);
             this.Controls.Add(this.btn9);

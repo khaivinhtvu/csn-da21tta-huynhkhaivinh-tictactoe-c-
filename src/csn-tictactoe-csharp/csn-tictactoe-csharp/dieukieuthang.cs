@@ -12,7 +12,7 @@ namespace csn_tictactoe_csharp
         public static int kiemtraThang(int x, int y, int n, string chu, Button[,] b)
         {
             int dk;
-            int dem = 0;
+            int dem = Hoa(n , b);
             dk = Thang(x, y, n, chu, b);
 
             if (dk == 1 && chu == "X")
@@ -24,6 +24,160 @@ namespace csn_tictactoe_csharp
             {
                 return -1;
             }
+
+            if (dem == 0)
+            {
+                return 0;
+            }
+
+            if (dk == 0)
+            {
+                return 2;
+            }
+
+            return 3;
+        }
+
+        public static int Thang(int x, int y, int n, string kytu, Button[,] a)
+        {
+            int ketqua = 0;
+            int xtamcheochinh = x;
+            int ytamcheochinh = y;
+            int xtamcheophu = x;
+            int ytamcheophu = y;
+
+            //tim dong
+            for (int i = 0; i < n; i++)
+            {
+                if (i + 2 == n - 1)
+                {
+                    if (a[x, i].Text == kytu && a[x, i + 1].Text == kytu && a[x, i + 2].Text == kytu)
+                    {
+                        ketqua = 1;
+                        return ketqua;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                if (a[x, i].Text == kytu && a[x, i + 1].Text == kytu && a[x, i + 2].Text == kytu)
+                {
+                    ketqua = 1;
+                    return ketqua;
+                }
+            }
+
+            //tim cot
+            for (int i = 0; i < n; i++)
+            {
+                if (i + 2 == n - 1)
+                {
+                    if (a[i, y].Text == kytu && a[i + 1, y].Text == kytu && a[i + 2, y].Text == kytu)
+                    {
+                        ketqua = 1;
+                        return ketqua;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                if (a[i, y].Text == kytu && a[i + 1, y].Text == kytu && a[i + 2, y].Text == kytu)
+                {
+                    ketqua = 1;
+                    return ketqua;
+                }
+            }
+
+            //tim duong cheo chinh
+            for (int i = 0; i < n; i++)
+            {
+                if (xtamcheochinh - i == 0 || ytamcheochinh - i == 0)
+                {
+                    xtamcheochinh = xtamcheochinh - i;
+                    ytamcheochinh = ytamcheochinh - i;
+                    break;
+                }
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                if (xtamcheochinh + 2 > n - 1 || ytamcheochinh + 2 > n - 1)
+                {
+                    break;
+                }
+
+                if (xtamcheochinh + 2 == n - 1 || ytamcheochinh + 2 == n - 1)
+                {
+                    if (a[xtamcheochinh, ytamcheochinh].Text == kytu && a[xtamcheochinh + 1, ytamcheochinh + 1].Text == kytu && a[xtamcheochinh + 2, ytamcheochinh + 2].Text == kytu)
+                    {
+                        ketqua = 1;
+                        break;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+                if (a[xtamcheochinh, ytamcheochinh].Text == kytu && a[xtamcheochinh + 1, ytamcheochinh + 1].Text == kytu && a[xtamcheochinh + 2, ytamcheochinh + 2].Text == kytu)
+                {
+                    ketqua = 1;
+                    break;
+                }
+
+                xtamcheochinh++;
+                ytamcheochinh++;
+            }
+
+            //tim duong cheo phu
+            for (int i = 0; i < n; i++)
+            {
+                if (xtamcheophu - i == 0 || ytamcheophu + i == n - 1)
+                {
+                    xtamcheophu = xtamcheophu - i;
+                    ytamcheophu = ytamcheophu + i;
+                    break;
+                }
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                if (xtamcheophu + 2 > n - 1 || ytamcheophu - 2 < 0)
+                {
+                    break;
+                }
+
+                if (xtamcheophu + 2 == n - 1 || ytamcheophu - 2 == 0)
+                {
+                    if (a[xtamcheophu, ytamcheophu].Text == kytu && a[xtamcheophu + 1, ytamcheophu - 1].Text == kytu && a[xtamcheophu + 2, ytamcheophu - 2].Text == kytu)
+                    {
+                        ketqua = 1;
+                        break;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+                if (a[xtamcheophu, ytamcheophu].Text == kytu && a[xtamcheophu + 1, ytamcheophu - 1].Text == kytu && a[xtamcheophu + 2, ytamcheophu - 2].Text == kytu)
+                {
+                    ketqua = 1;
+                    break;
+                }
+
+                xtamcheophu++;
+                ytamcheophu--;
+            }
+
+            return ketqua;
+        }
+
+        public static int Hoa(int n, Button[,] b)
+        {
+            int dem = 0;
 
             for (int i = 0; i < n; i++)
             {
@@ -41,191 +195,7 @@ namespace csn_tictactoe_csharp
                 return 0;
             }
 
-            if (dk == 0)
-            {
-                return 2;
-            }
-
-            return 3;
-        }
-
-        public static int Thang(int x, int y, int n, string kytu, Button[,] a)
-        {
-            int ketqua = 0;
-            int demdong = 0;
-            int demcot = 0;
-            int cheotren1 = 0;
-            int cheotren2 = 0;
-            int cheoduoi1 = 0;
-            int cheoduoi2 = 0;
-
-            //tim dong
-            for (int i = 0; i < n; i++)
-            {
-                if (i + n - 1 == n - 1)
-                {
-                    if (a[x, i].Text == kytu && a[x, i + 1].Text == kytu && a[x, i + 2].Text == kytu)
-                    {
-                        demdong = 1;
-                        break;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-                if (a[x, i].Text == kytu && a[x, i + 1].Text == kytu && a[x, i + 2].Text == kytu)
-                {
-                    demdong = 1;
-                    break;
-                }
-            }
-
-            if (demdong == 1)
-            {
-                ketqua = 1;
-                return ketqua;
-            }
-
-            //tim cot
-            for (int i = 0; i < n; i++)
-            {
-                if (i + n - 1 == n - 1)
-                {
-                    if (a[i, y].Text == kytu && a[i + 1, y].Text == kytu && a[i + 2, y].Text == kytu)
-                    {
-                        demcot = 1;
-                        break;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-                if (a[i, y].Text == kytu && a[i + 1, y].Text == kytu && a[i + 2, y].Text == kytu)
-                {
-                    demcot = 1;
-                    break;
-                }
-            }
-
-            if (demcot == 1)
-            {
-                ketqua = 1;
-                return ketqua;
-            }
-
-            //tim duong cheo tren
-            //tim xuong
-            for (int i = 0; i < n; i++)
-            {
-                if (x + i == n - 1 || y + i == n - 1)
-                {
-                    if (a[x + i, y + i].Text == kytu)
-                    {
-                        cheotren1 = cheotren1 + 1;
-                        break;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-                if (a[x + i, y + i].Text == kytu)
-                {
-                    cheotren1 = cheotren1 + 1;
-                }
-            }
-
-            //tim len 
-            for (int i = 0; i > -n; i--)
-            {
-                if (x + i == 0 || y + i == 0)
-                {
-                    if (a[x + i, y + i].Text == kytu)
-                    {
-                        cheotren2 = cheotren2 + 1;
-                        break;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-                if (a[x + i, y + i].Text == kytu)
-                {
-                    cheotren2 = cheotren2 + 1;
-                }
-            }
-
-            if (cheotren1 == 3 || cheotren2 == 3)
-            {
-                ketqua = 1;
-                return ketqua;
-            }
-
-            if (cheotren1 + cheotren2 - 1 == 3)
-            {
-                ketqua = 1;
-                return ketqua;
-            }
-
-            //Tim duong cheo duoi tren
-            //tim xuong
-            for (int i = 0; i < n; i++)
-            {
-                if (x + i == n - 1 || y - i == 0)
-                {
-                    if (a[x + i, y - i].Text == kytu)
-                    {
-                        cheoduoi1 = cheoduoi1 + 1;
-                        break;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-                if (a[x + i, y - i].Text == kytu)
-                {
-                    cheoduoi1 = cheoduoi1 + 1;
-                }
-            }
-
-            //tim len
-            for (int i = 0; i < n; i++)
-            {
-                if (x - i == 0 || y + i == n - 1)
-                {
-                    if (a[x - i, y + i].Text == kytu)
-                    {
-                        cheoduoi2 = cheoduoi2 + 1;
-                        break;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-                if (a[x - i, y + i].Text == kytu)
-                {
-                    cheoduoi2 = cheoduoi2 + 1;
-                }
-            }
-
-            if (cheoduoi1 == 3 || cheoduoi2 == 3)
-            {
-                ketqua = 1;
-                return ketqua;
-            }
-
-            if (cheoduoi1 + cheoduoi2 - 1 == 3)
-            {
-                ketqua = 1;
-                return ketqua;
-            }
-
-            return ketqua;
+            return 2;
         }
     }
 }
