@@ -23,7 +23,7 @@ namespace csn_tictactoe_csharp
         private int luoc;
         private int[] dichuyenmay;
         Button[,] btns = new Button[5, 5];
-        private int chieusau = 3;
+        private int chieusau = 2;
 
         private void khoitao()
         {

@@ -74,7 +74,7 @@ namespace csn_tictactoe_csharp
             // 
             this.lbkytunguoichoi.AutoSize = true;
             this.lbkytunguoichoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbkytunguoichoi.Location = new System.Drawing.Point(182, 9);
+            this.lbkytunguoichoi.Location = new System.Drawing.Point(194, 9);
             this.lbkytunguoichoi.Margin = new System.Windows.Forms.Padding(0);
             this.lbkytunguoichoi.Name = "lbkytunguoichoi";
             this.lbkytunguoichoi.Size = new System.Drawing.Size(34, 37);

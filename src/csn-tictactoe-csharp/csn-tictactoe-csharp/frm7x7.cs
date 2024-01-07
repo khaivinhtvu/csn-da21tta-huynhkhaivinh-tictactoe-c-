@@ -23,7 +23,7 @@ namespace csn_tictactoe_csharp
         private int luoc;
         private int[] dichuyenmay;
         Button[,] btns = new Button[7, 7];
-        private int chieusau = 2;
+        private int chieusau = 1;
 
         private void khoitao()
         {
@@ -214,7 +214,7 @@ namespace csn_tictactoe_csharp
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn1.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -240,7 +240,7 @@ namespace csn_tictactoe_csharp
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn2.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -266,7 +266,7 @@ namespace csn_tictactoe_csharp
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn3.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -292,7 +292,7 @@ namespace csn_tictactoe_csharp
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn4.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -318,7 +318,7 @@ namespace csn_tictactoe_csharp
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn5.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -344,7 +344,7 @@ namespace csn_tictactoe_csharp
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn6.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -370,7 +370,7 @@ namespace csn_tictactoe_csharp
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn7.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -396,7 +396,7 @@ namespace csn_tictactoe_csharp
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn8.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -422,7 +422,7 @@ namespace csn_tictactoe_csharp
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn9.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -448,7 +448,7 @@ namespace csn_tictactoe_csharp
 
         private void btn10_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn10.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -474,7 +474,7 @@ namespace csn_tictactoe_csharp
 
         private void btn11_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn11.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -500,7 +500,7 @@ namespace csn_tictactoe_csharp
 
         private void btn12_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn12.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -526,7 +526,7 @@ namespace csn_tictactoe_csharp
 
         private void btn13_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn13.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -552,7 +552,7 @@ namespace csn_tictactoe_csharp
 
         private void btn14_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn14.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -578,7 +578,7 @@ namespace csn_tictactoe_csharp
 
         private void btn15_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn15.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -604,7 +604,7 @@ namespace csn_tictactoe_csharp
 
         private void btn16_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn16.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -630,7 +630,7 @@ namespace csn_tictactoe_csharp
 
         private void btn17_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn17.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -656,7 +656,7 @@ namespace csn_tictactoe_csharp
 
         private void btn18_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn18.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -682,7 +682,7 @@ namespace csn_tictactoe_csharp
 
         private void btn19_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn19.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -708,7 +708,7 @@ namespace csn_tictactoe_csharp
 
         private void btn20_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn20.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -734,7 +734,7 @@ namespace csn_tictactoe_csharp
 
         private void btn21_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn21.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -760,7 +760,7 @@ namespace csn_tictactoe_csharp
 
         private void btn22_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn22.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -786,7 +786,7 @@ namespace csn_tictactoe_csharp
 
         private void btn23_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn23.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -812,7 +812,7 @@ namespace csn_tictactoe_csharp
 
         private void btn24_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn24.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -838,7 +838,7 @@ namespace csn_tictactoe_csharp
 
         private void btn25_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn25.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -864,7 +864,7 @@ namespace csn_tictactoe_csharp
 
         private void btn26_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn26.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -890,7 +890,7 @@ namespace csn_tictactoe_csharp
 
         private void btn27_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn27.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -916,7 +916,7 @@ namespace csn_tictactoe_csharp
 
         private void btn28_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn28.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -942,7 +942,7 @@ namespace csn_tictactoe_csharp
 
         private void btn29_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn29.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -968,7 +968,7 @@ namespace csn_tictactoe_csharp
 
         private void btn30_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn30.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -994,7 +994,7 @@ namespace csn_tictactoe_csharp
 
         private void btn31_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn31.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1020,7 +1020,7 @@ namespace csn_tictactoe_csharp
 
         private void btn32_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn32.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1046,7 +1046,7 @@ namespace csn_tictactoe_csharp
 
         private void btn33_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn33.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1072,7 +1072,7 @@ namespace csn_tictactoe_csharp
 
         private void btn34_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn34.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1098,7 +1098,7 @@ namespace csn_tictactoe_csharp
 
         private void btn35_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn35.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1124,7 +1124,7 @@ namespace csn_tictactoe_csharp
 
         private void btn36_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn36.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1150,7 +1150,7 @@ namespace csn_tictactoe_csharp
 
         private void btn37_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn37.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1176,7 +1176,7 @@ namespace csn_tictactoe_csharp
 
         private void btn38_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn38.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1202,7 +1202,7 @@ namespace csn_tictactoe_csharp
 
         private void btn39_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn39.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1228,7 +1228,7 @@ namespace csn_tictactoe_csharp
 
         private void btn40_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn40.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1254,7 +1254,7 @@ namespace csn_tictactoe_csharp
 
         private void btn41_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn41.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1280,7 +1280,7 @@ namespace csn_tictactoe_csharp
 
         private void btn42_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn42.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1306,7 +1306,7 @@ namespace csn_tictactoe_csharp
 
         private void btn43_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn43.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1332,7 +1332,7 @@ namespace csn_tictactoe_csharp
 
         private void btn44_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn44.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1358,7 +1358,7 @@ namespace csn_tictactoe_csharp
 
         private void btn45_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn45.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1384,7 +1384,7 @@ namespace csn_tictactoe_csharp
 
         private void btn46_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn46.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1410,7 +1410,7 @@ namespace csn_tictactoe_csharp
 
         private void btn47_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn47.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1436,7 +1436,7 @@ namespace csn_tictactoe_csharp
 
         private void btn48_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn48.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
@@ -1462,7 +1462,7 @@ namespace csn_tictactoe_csharp
 
         private void btn49_Click(object sender, EventArgs e)
         {
-            if (luoc == -1)
+            if (luoc == -1 && btn49.Text == " ")
             {
                 switch (kytunguoichoi)
                 {
