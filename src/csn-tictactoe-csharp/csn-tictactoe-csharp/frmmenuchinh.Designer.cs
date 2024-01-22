@@ -45,7 +45,7 @@ namespace csn_tictactoe_csharp
             // 
             this.lbchonchedochoi.AutoSize = true;
             this.lbchonchedochoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbchonchedochoi.Location = new System.Drawing.Point(152, 212);
+            this.lbchonchedochoi.Location = new System.Drawing.Point(161, 231);
             this.lbchonchedochoi.Name = "lbchonchedochoi";
             this.lbchonchedochoi.Size = new System.Drawing.Size(333, 32);
             this.lbchonchedochoi.TabIndex = 0;
@@ -66,7 +66,7 @@ namespace csn_tictactoe_csharp
             this.btnx.BackColor = System.Drawing.Color.White;
             this.btnx.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnx.ForeColor = System.Drawing.Color.Blue;
-            this.btnx.Location = new System.Drawing.Point(167, 116);
+            this.btnx.Location = new System.Drawing.Point(205, 125);
             this.btnx.Name = "btnx";
             this.btnx.Size = new System.Drawing.Size(75, 75);
             this.btnx.TabIndex = 2;
@@ -79,7 +79,7 @@ namespace csn_tictactoe_csharp
             this.btno.BackColor = System.Drawing.Color.White;
             this.btno.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btno.ForeColor = System.Drawing.Color.Red;
-            this.btno.Location = new System.Drawing.Point(395, 116);
+            this.btno.Location = new System.Drawing.Point(373, 125);
             this.btno.Name = "btno";
             this.btno.Size = new System.Drawing.Size(75, 75);
             this.btno.TabIndex = 3;
@@ -91,7 +91,7 @@ namespace csn_tictactoe_csharp
             // 
             this.btn3x3.BackColor = System.Drawing.Color.White;
             this.btn3x3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3x3.Location = new System.Drawing.Point(167, 265);
+            this.btn3x3.Location = new System.Drawing.Point(176, 284);
             this.btn3x3.Name = "btn3x3";
             this.btn3x3.Size = new System.Drawing.Size(75, 75);
             this.btn3x3.TabIndex = 4;
@@ -103,7 +103,7 @@ namespace csn_tictactoe_csharp
             // 
             this.btn5x5.BackColor = System.Drawing.Color.White;
             this.btn5x5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5x5.Location = new System.Drawing.Point(282, 265);
+            this.btn5x5.Location = new System.Drawing.Point(291, 284);
             this.btn5x5.Name = "btn5x5";
             this.btn5x5.Size = new System.Drawing.Size(75, 75);
             this.btn5x5.TabIndex = 5;
@@ -115,7 +115,7 @@ namespace csn_tictactoe_csharp
             // 
             this.btn7x7.BackColor = System.Drawing.Color.White;
             this.btn7x7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7x7.Location = new System.Drawing.Point(395, 265);
+            this.btn7x7.Location = new System.Drawing.Point(404, 284);
             this.btn7x7.Name = "btn7x7";
             this.btn7x7.Size = new System.Drawing.Size(75, 75);
             this.btn7x7.TabIndex = 6;
@@ -127,7 +127,7 @@ namespace csn_tictactoe_csharp
             // 
             this.btnbatdau.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnbatdau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbatdau.Location = new System.Drawing.Point(238, 355);
+            this.btnbatdau.Location = new System.Drawing.Point(247, 374);
             this.btnbatdau.Name = "btnbatdau";
             this.btnbatdau.Size = new System.Drawing.Size(175, 75);
             this.btnbatdau.TabIndex = 7;
@@ -139,7 +139,7 @@ namespace csn_tictactoe_csharp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(123, 72);
+            this.label1.Location = new System.Drawing.Point(161, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 32);
             this.label1.TabIndex = 8;
@@ -149,7 +149,7 @@ namespace csn_tictactoe_csharp
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(360, 72);
+            this.label2.Location = new System.Drawing.Point(338, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 32);
             this.label2.TabIndex = 9;
@@ -159,7 +159,7 @@ namespace csn_tictactoe_csharp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 450);
+            this.ClientSize = new System.Drawing.Size(651, 472);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnbatdau);

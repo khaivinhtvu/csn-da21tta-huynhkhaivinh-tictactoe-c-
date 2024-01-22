@@ -406,6 +406,7 @@ namespace csn_tictactoe_csharp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(645, 618);
             this.Controls.Add(this.lbkytumay);
             this.Controls.Add(this.lbmay);

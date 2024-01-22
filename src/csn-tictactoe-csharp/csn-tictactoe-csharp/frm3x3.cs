@@ -57,7 +57,7 @@ namespace csn_tictactoe_csharp
             btn9.Text = " ";
         }
 
-        private void dichuyen()
+        private void dichuyen(int chieusau)
         {
             if (luoc == 1)
             {
@@ -98,7 +98,7 @@ namespace csn_tictactoe_csharp
                         MessageBox.Show("Hoà!");
                         datlainut();
                         luoc = demluoc.datlailuoc(luoc, kytunguoichoi);
-                        if (luoc == 1) { dichuyen(); }
+                        if (luoc == 1) { dichuyen(0); }
                         break;
                     }
                 case 1:
@@ -106,7 +106,7 @@ namespace csn_tictactoe_csharp
                         MessageBox.Show("X thắng!");
                         datlainut();
                         luoc = demluoc.datlailuoc(luoc, kytunguoichoi);
-                        if (luoc == 1) { dichuyen(); }
+                        if (luoc == 1) { dichuyen(0); }
                         break;
                     }
                 case -1:
@@ -114,7 +114,7 @@ namespace csn_tictactoe_csharp
                         MessageBox.Show("O thắng!");
                         datlainut();
                         luoc = demluoc.datlailuoc(luoc, kytunguoichoi);
-                        if (luoc == 1) { dichuyen(); }
+                        if (luoc == 1) { dichuyen(0); }
                         break;
                     }
             }
@@ -142,7 +142,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(0, 0, 3, btn1.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -168,7 +168,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(0, 1, 3, btn2.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -194,7 +194,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(0, 2, 3, btn3.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -220,7 +220,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(1, 0, 3, btn4.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -246,7 +246,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(1, 1, 3, btn5.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -272,7 +272,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(1, 2, 3, btn6.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -298,7 +298,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(2, 0, 3, btn7.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -324,7 +324,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(2, 1, 3, btn8.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -350,7 +350,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(2, 2, 3, btn9.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -377,7 +377,7 @@ namespace csn_tictactoe_csharp
                         lbkytumay.Text = "X";
                         lbkytumay.ForeColor = Color.Blue;
                         luoc = 1;
-                        dichuyen();
+                        dichuyen(0);
                         break;
                     }
             }
