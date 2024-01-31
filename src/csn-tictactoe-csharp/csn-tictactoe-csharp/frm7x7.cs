@@ -23,7 +23,7 @@ namespace csn_tictactoe_csharp
         private int luoc;
         private int[] dichuyenmay;
         Button[,] btns = new Button[7, 7];
-        private int chieusau = 1;
+        private int chieusau = 2;
 
         private void khoitao()
         {
@@ -143,7 +143,7 @@ namespace csn_tictactoe_csharp
             btn49.Text = " ";
         }
 
-        private void dichuyen()
+        private void dichuyen(int chieusau)
         {
             if (luoc == 1)
             {
@@ -184,7 +184,7 @@ namespace csn_tictactoe_csharp
                         MessageBox.Show("Hoà!");
                         datlainut();
                         luoc = demluoc.datlailuoc(luoc, kytunguoichoi);
-                        if (luoc == 1) { dichuyen(); }
+                        if (luoc == 1) { dichuyen(0); }
                         break;
                     }
                 case 1:
@@ -192,7 +192,7 @@ namespace csn_tictactoe_csharp
                         MessageBox.Show("X thắng!");
                         datlainut();
                         luoc = demluoc.datlailuoc(luoc, kytunguoichoi);
-                        if (luoc == 1) { dichuyen(); }
+                        if (luoc == 1) { dichuyen(0); }
                         break;
                     }
                 case -1:
@@ -200,7 +200,7 @@ namespace csn_tictactoe_csharp
                         MessageBox.Show("O thắng!");
                         datlainut();
                         luoc = demluoc.datlailuoc(luoc, kytunguoichoi);
-                        if (luoc == 1) { dichuyen(); }
+                        if (luoc == 1) { dichuyen(0); }
                         break;
                     }
             }
@@ -234,7 +234,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(0, 0, 7, btn1.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -260,7 +260,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(0, 1, 7, btn2.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -286,7 +286,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(0, 2, 7, btn3.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -312,7 +312,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(0, 3, 7, btn4.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -338,7 +338,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(0, 4, 7, btn5.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -364,7 +364,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(0, 5, 7, btn6.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -390,7 +390,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(0, 6, 7, btn7.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -416,7 +416,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(1, 0, 7, btn8.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -442,7 +442,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(1, 1, 7, btn9.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -468,7 +468,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(1, 2, 7, btn10.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -494,7 +494,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(1, 3, 7, btn11.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -520,7 +520,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(1, 4, 7, btn12.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -546,7 +546,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(1, 5, 7, btn13.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -572,7 +572,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(1, 6, 7, btn14.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -598,7 +598,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(2, 0, 7, btn15.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -624,7 +624,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(2, 1, 7, btn16.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -650,7 +650,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(2, 2, 7, btn17.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -676,7 +676,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(2, 3, 7, btn18.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -702,7 +702,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(2, 4, 7, btn19.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -728,7 +728,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(2, 5, 7, btn20.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -754,7 +754,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(2, 6, 7, btn21.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -780,7 +780,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(3, 0, 7, btn22.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -806,7 +806,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(3, 1, 7, btn23.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -832,7 +832,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(3, 2, 7, btn24.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -858,7 +858,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(3, 3, 7, btn25.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -884,7 +884,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(3, 4, 7, btn26.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -910,7 +910,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(3, 5, 7, btn27.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -936,7 +936,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(3, 6, 7, btn28.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -962,7 +962,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(4, 0, 7, btn29.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -988,7 +988,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(4, 1, 7, btn30.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1014,7 +1014,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(4, 2, 7, btn31.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1040,7 +1040,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(4, 3, 7, btn32.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1066,7 +1066,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(4, 4, 7, btn33.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1092,7 +1092,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(4, 5, 7, btn34.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1118,7 +1118,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(4, 6, 7, btn35.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1144,7 +1144,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(5, 0, 7, btn36.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1170,7 +1170,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(5, 1, 7, btn37.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1196,7 +1196,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(5, 2, 7, btn38.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1222,7 +1222,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(5, 3, 7, btn39.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1248,7 +1248,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(5, 4, 7, btn40.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1274,7 +1274,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(5, 5, 7, btn41.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1300,7 +1300,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(5, 6, 7, btn42.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1326,7 +1326,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(6, 0, 7, btn43.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1352,7 +1352,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(6, 1, 7, btn44.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1378,7 +1378,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(6, 2, 7, btn45.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1404,7 +1404,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(6, 3, 7, btn46.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1430,7 +1430,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(6, 4, 7, btn47.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1456,7 +1456,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(6, 5, 7, btn48.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1482,7 +1482,7 @@ namespace csn_tictactoe_csharp
 
                 luoc = demluoc.capnhatluoc(luoc);
                 Thang(6, 6, 7, btn49.Text, btns);
-                dichuyen();
+                dichuyen(chieusau);
             }
         }
 
@@ -1509,7 +1509,7 @@ namespace csn_tictactoe_csharp
                         lbkytumay.Text = "X";
                         lbkytumay.ForeColor = Color.Blue;
                         luoc = 1;
-                        dichuyen();
+                        dichuyen(0);
                         break;
                     }
             }
